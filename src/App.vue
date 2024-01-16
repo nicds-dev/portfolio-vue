@@ -6,22 +6,11 @@
   <Contact />
 </template>
 
-<script>
+<script setup>
 import NavBar from './components/NavBar.vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Projects from './components/Projects.vue'
-import Contact from './components/Contact.vue'
+import Home from './views/Home.vue'
+import About from './views/About.vue'
+import Projects from './views/Projects.vue'
+import Contact from './views/Contact.vue'
 
-
-export default {
-  name: 'App',
-  components: {
-    NavBar,
-    Home,
-    About,
-    Projects,
-    Contact
-  }
-}
 </script>
