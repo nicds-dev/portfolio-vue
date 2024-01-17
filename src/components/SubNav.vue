@@ -1,17 +1,17 @@
 <template>
-    <div class="container offcanvas-body d-flex align-items-center">
-      <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 fw-semibold fs-5">
-        <li v-for="header in headers" :key="header.id" class="nav-item mx-2">
-          <a
-            :href="`#${header.id}`"
-            :class="{ 'nav-link': true, active: header.id === currentSection }"
-          >{{ header.name }}</a>
-        </li>
-      </ul>
-    </div>
-  </template>
+  <div class="container offcanvas-body d-flex align-items-center">
+    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 fw-semibold fs-5">
+      <li v-for="header in headers" :key="header.id" class="nav-item mx-2">
+        <a
+          :href="`#${header.id}`"
+          :class="{ 'nav-link': true, active: header.id === currentSection }"
+        >{{ header.name }}</a>
+      </li>
+    </ul>
+  </div>
+</template>
   
-  <script setup>
+<script setup>
   import { ref, onMounted } from "vue";
   
   const currentSection = ref();
@@ -43,5 +43,5 @@
       }
     });
   }
-  </script>
+</script>
   
