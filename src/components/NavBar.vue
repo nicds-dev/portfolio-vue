@@ -3,7 +3,7 @@
     id="navbar" 
     class="navbar navbar-blur navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom border-blue"
   >
-    <div class="container pt-2" style="scrollbar-gutter: stable;">
+    <div class="container-fluid py-1" style="scrollbar-gutter: stable;">
       <!-- Name/Logo -->
       <a href="#" class="navbar-brand fw-bold fs-4 ps-3">nicds.<span class="text-blue">dev</span></a>
       <!-- Toggle Button -->
@@ -20,14 +20,14 @@
       </button>
       <!-- SideBar -->
       <div 
-        class="sidebar offcanvas offcanvas-start p-2" 
+        class="sidebar offcanvas offcanvas-start py-1 px-3" 
         tabindex="-1" 
         id="offcanvasNavbar" 
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div 
           class="container offcanvas-header text-white">
-          <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+          <h5 class="offcanvas-title fs-4 fw-bold" id="offcanvasNavbarLabel">
             nicds.
             <span class="text-blue">dev</span>
           </h5>
@@ -47,3 +47,9 @@
 import SubNav from './SubNav.vue';
 
 </script>
+
+<style scoped>
+	.container-fluid {
+		width: 95%;
+	}
+</style>

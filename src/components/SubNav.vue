@@ -1,7 +1,7 @@
 <template>
-  <div class="container offcanvas-body d-flex align-items-center">
+  <div class="container-fluid offcanvas-body d-flex align-items-center me-0">
     <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 fw-semibold fs-5">
-      <li v-for="header in headers" :key="header.id" class="nav-item mx-2">
+      <li v-for="header in headers" :key="header.id" class="nav-item mx-1">
         <a
           :href="`#${header.id}`"
           :class="{ 'nav-link': true, active: header.id === currentSection }"
