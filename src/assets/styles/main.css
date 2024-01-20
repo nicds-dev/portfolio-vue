@@ -224,8 +224,8 @@ section.section-blue-gray {
         backdrop-filter: blur(8px);
     }.btn-social {
         margin-inline: 0rem;
-    }.w-img-70 {
-        max-width: 70%;
+    }.w-img-80 {
+        max-width: 80%;
     }
 }
 @media (max-width: 576px) {
