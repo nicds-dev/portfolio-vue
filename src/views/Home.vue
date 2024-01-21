@@ -10,13 +10,13 @@
         </h1>
         <em class="fs-5 mt-2 mb-4">Experience in web development. "Optimizing the performance behind the screen."</em>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-          <a :href="user.linkedin" class="icon-social" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a :href="user.github" class="icon-social" target="_blank"><i class="bi bi-github"></i></a>
+          <a :href="userData.linkedin" class="icon-social" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a :href="userData.github" class="icon-social" target="_blank"><i class="bi bi-github"></i></a>
           <a href="/cv-es.pdf" class="btn btn-cv fw-semibold" target="_blank"><i class="bi bi-download icon-bold"></i> CV</a>
         </div>
       </article>
       <div class="col-lg-5 col-md-8 order-1 mx-auto mx-lg-0 text-center">
-        <img :src="user.img" alt="nicds picture" class="img-fluid w-img-80 rounded-circle">
+        <img :src="userData.img" alt="nicds picture" class="img-fluid w-img-80 rounded-circle">
       </div>
       <div class="d-flex flex-column flex-lg-row align-items-center pt-lg-5 py-4 row-gap-5 order-3">
           <h2 class="col-lg-2 col text-lg-start text-center fw-bold fs-4 mb-0">Tech 
@@ -39,28 +39,33 @@
   </section>
 </template>
 
-<script setup>
-const user = {
-  linkedin: "https://www.linkedin.com/in/nicds/",
-  github: "https://github.com/nicds-dev/",
-  img: require("@/assets/img/profile.webp"),
+<script>
+export default {
+  name: 'Home',
+  props: {
+    userData: Object
+  },
+  data() {
+    return {
+      catIcons: {
+        iconsBack: [
+          { name: "Python", text: "py"},
+          { name: "Django", text: "django"},
+          { name: "PostgreSQL", text: "postgres"},
+          { name: "Postman", text: "postman"},
+        ],
+        iconsFront: [
+          { name: "JavaScript", text: "js"},
+          { name: "VueJS", text: "vue"},
+          { name: "Bootstrap", text: "bootstrap"},
+        ],
+        iconsTools: [
+          { name: "Git", text: "git"},
+        ],
+      } 
+    }
+  },
 }
-const catIcons = {
-  iconsBack: [
-    { name: "Python", text: "py"},
-    { name: "Django", text: "django"},
-    { name: "PostgreSQL", text: "postgres"},
-    { name: "Postman", text: "postman"},
-  ],
-  iconsFront: [
-    { name: "JavaScript", text: "js"},
-    { name: "VueJS", text: "vue"},
-    { name: "Bootstrap", text: "bootstrap"},
-  ],
-  iconsTools: [
-    { name: "Git", text: "git"},
-  ],
-} 
 </script>
 
 <style scoped>

@@ -11,37 +11,42 @@
   </div>
 </template>
   
-<script setup>
-  import { ref, onMounted } from "vue";
-  
-  const currentSection = ref();
-  let section = ref();
-  
-  const headers = [
-    { name: "Home", id: "home" },
-    { name: "About", id: "about" },
-    { name: "Projects", id: "projects" },
-    { name: "Contact", id: "contact" },
-  ];
-  
-  onMounted(() => {
-    section.value = document.querySelectorAll("section");
-  
-    window.addEventListener("scroll", updateScroll);
-    updateScroll();
-  });
-  
-  function updateScroll() {
-    section.value.forEach((sec) => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute("id");
-  
-      if (top >= offset && top < offset + height) {
-        currentSection.value = id;
-      }
-    });
-  }
+<script>
+
+export default {
+  name: "SubNav",
+  props: {
+    headers: Array
+  },
+  data() {
+    return {
+      currentSection: null,
+      section: null,
+    }
+  },
+  methods: {
+    updateScroll() {
+      this.section.forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          this.currentSection = id;
+        }
+      });
+    },
+  },
+  mounted() {
+    this.section = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", this.updateScroll);
+    this.updateScroll();
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.updateScroll);
+  },
+}  
 </script>
   

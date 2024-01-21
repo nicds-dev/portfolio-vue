@@ -28,34 +28,39 @@
   </section>
 </template>
 
-<script setup>
-const portfolio = [
-  {
-    title: "Test Django REST Framework",
-    description: "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
-    source: "https://github.com/nicds-dev/django_test",
-    link: "",
-    youtube: "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
-    img: require("@/assets/img/drf_test.webp"),
-    tags: [
-      'Django', 'Postman'
-    ],
+<script>
+export default {
+  name: 'Projects',
+  data() {
+    return {
+      portfolio: [
+        {
+          title: "Test Django REST Framework",
+          description: "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
+          source: "https://github.com/nicds-dev/django_test",
+          link: "",
+          youtube: "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
+          img: require("@/assets/img/drf_test.webp"),
+          tags: [
+            'Django', 'Postman'
+          ],
+        },
+        {
+          title: "Test Django REST Framework",
+          description: "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
+          source: "https://github.com/nicds-dev/django_test",
+          link: "https://www.youtube.com/",
+          youtube: "",
+          img: require("@/assets/img/drf_test.webp"),
+          tags: [
+            'Django', 'Postman', 'API',
+          ],
+        },
+        {},
+      ],
+    }
   },
-  {
-    title: "Test Django REST Framework",
-    description: "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
-    source: "https://github.com/nicds-dev/django_test",
-    link: "https://www.youtube.com/",
-    youtube: "",
-    img: require("@/assets/img/drf_test.webp"),
-    tags: [
-      'Django', 'Postman', 'API',
-    ],
-  },
-  {
-
-  },
-]
+}
 </script>
 
 <style scoped>

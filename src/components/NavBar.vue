@@ -37,15 +37,31 @@
             data-bs-dismiss="offcanvas" aria-label="Close"
           ></button>
         </div>
-        <SubNav />
+        <SubNav :headers="headers" />
       </div>
     </div>
   </nav>
 </template>
 
-<script setup>
-import SubNav from './SubNav.vue';
+<script>
+import SubNav from './SubNav.vue'
 
+export default {
+  name: 'NavBar',
+  components: {
+    SubNav
+  },
+  data() {
+    return {
+      headers: [
+        { name: "Home", id: "home" },
+        { name: "About", id: "about" },
+        { name: "Projects", id: "projects" },
+        { name: "Contact", id: "contact" },
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>
