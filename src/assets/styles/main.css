@@ -46,6 +46,9 @@ body {
     overflow: auto !important;
     padding-right: 0px !important;
 }
+section {
+    scroll-margin-top: 78px;
+}
 section.section-dark {
     background: linear-gradient(135deg, #01102f 50%, #071d44);
 }
@@ -81,7 +84,6 @@ section.section-blue-gray {
     transition-duration: .15s;
 }
 .box-project:hover {
-    transform: scale(1.03);
     background-color: #102146;
 }
 .icon-skill {
@@ -90,7 +92,9 @@ section.section-blue-gray {
 .icon-bold::before {
     font-weight: bold !important;
 }
-
+.icon-project {
+    cursor: pointer;
+}
 .icon-project::before {
     font-size: 1.5rem;
     font-weight: bold !important;

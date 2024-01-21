@@ -1,9 +1,9 @@
 <template>
   <nav 
     id="navbar" 
-    class="navbar navbar-blur navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom border-blue"
+    class="navbar navbar-blur navbar-expand-lg navbar-dark fixed-top border-bottom border-blue"
   >
-    <div class="container-fluid py-1" style="scrollbar-gutter: stable;">
+    <div class="container-fluid py-1">
       <!-- Name/Logo -->
       <a href="#" class="navbar-brand fw-bold fs-4 ps-3">nicds.<span class="text-blue">dev</span></a>
       <!-- Toggle Button -->
@@ -26,7 +26,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div 
-          class="container offcanvas-header text-white">
+          class="container-fluid offcanvas-header text-white">
           <h5 class="offcanvas-title fs-4 fw-bold" id="offcanvasNavbarLabel">
             nicds.
             <span class="text-blue">dev</span>

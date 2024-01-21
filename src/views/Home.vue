@@ -8,7 +8,7 @@
             <span class="text-white d-inline">Developer</span>
           </span>
         </h1>
-        <em class="fs-5 mb-3">Optimizing the experience behind the screen.</em>
+        <em class="fs-5 mt-2 mb-4">Experience in web development. "Optimizing the performance behind the screen."</em>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
           <a :href="user.linkedin" class="icon-social" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a :href="user.github" class="icon-social" target="_blank"><i class="bi bi-github"></i></a>
@@ -66,7 +66,10 @@ const catIcons = {
 <style scoped>
   .fs-1 {
     font-size: calc(1.5rem + 1.5vw) !important;
-  } 
+  }
+  .img-fluid {
+    max-width: 85%;
+  }
   @media (min-width: 1200px) {
     .fs-1 {
       font-size: 3rem !important;
