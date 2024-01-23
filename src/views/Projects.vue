@@ -7,7 +7,7 @@
           <div class="h-100 d-flex flex-column gap-2 box-project rounded p-3">
             <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
             <img :src="project.img" :alt="project.title" class="img-fluid rounded">
-            <div class="d-flex flex-wrap justify-content-center column-gap-3 row-gap-2">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
               <div v-for="tag in project.tags" class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
                 <span class="fw-semibold">{{ tag }}</span>
               </div>
@@ -42,7 +42,7 @@ export default {
           youtube: "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
           img: require("@/assets/img/drf_test.webp"),
           tags: [
-            'Django', 'Postman'
+            'Django', 'REST', 'Postman',
           ],
         },
         {
@@ -53,7 +53,7 @@ export default {
           youtube: "",
           img: require("@/assets/img/drf_test.webp"),
           tags: [
-            'Django', 'Postman', 'API',
+            'Django', 'Postman', 'VueJS', 'PostgreSQL', 'Bootstrap',
           ],
         },
         {},

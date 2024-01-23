@@ -1,6 +1,4 @@
-/*----------------------------------
-            Fonts
-------------------------------------*/
+/*--------- Fonts ---------*/
 @font-face {
     font-family: 'Chakra Petch';
     font-style: normal;
@@ -37,9 +35,7 @@
     font-weight: 600;
     src: local('Chakra Petch Italic SemiBold'), local('ChakraPetch-Italic-SemiBold'), url('~@/assets/fonts/cIfnMapbsEk7TDLdtEz1BwkWmpK9RK_H9AI.woff2') format('woff2');
 }
-/*----------------------------------
-            Styles
-------------------------------------*/
+/*--------- Styles ---------*/
 body {
     font-family: 'Chakra Petch', sans-serif;
     background-color: rgb(1, 16, 47);
@@ -72,7 +68,7 @@ section.section-blue-gray {
     font-size: 2.125rem;
 }
 .box-skill-tag {
-    width: 5.4rem;
+    padding-inline: .3rem;
     box-shadow: 0px 2px 10px #24385B38;
     background-color: #24385B;
 }
@@ -109,18 +105,16 @@ section.section-blue-gray {
     color: white;
     outline-offset: -3px;
     transition: 400ms;
-    margin-inline: 0.2rem;
     font-size: 1.08rem;
 }
 .btn-cv:hover {
     background-color: #24385B;
 }
-.btn-social {
+.btn-blue {
     background-color: rgb(93, 190, 255);
     outline: 3px rgb(93, 190, 255) solid !important;
     outline-offset: -3px;
     transition: 400ms;
-    margin-inline: 0.2rem;
     font-size: 1.08rem;
 }
 .btn-languages {
@@ -138,9 +132,7 @@ section.section-blue-gray {
 .no-box-shadow {
     box-shadow: none !important;
 }
-/*----------------------------------
-            Animation
-------------------------------------*/
+/*--------- Animation ---------*/
 @keyframes bounce {
     0% {
         transform: translate(0)
@@ -190,10 +182,8 @@ section.section-blue-gray {
 .logo:nth-child(8) {
     transition-delay: 175ms;
 }
-/*----------------------------------
-            Styles Scrollbar
-------------------------------------*/
-/* WebKit (Chrome, Safari, Opera) */
+/*--------- Styles Scrollbar ---------*/
+/* (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -209,9 +199,7 @@ section.section-blue-gray {
     scrollbar-color: rgb(93, 190, 255) #ccd6e133;
     scrollbar-width: thin;
 }
-/*----------------------------------
-            Extra Bootstrap
-------------------------------------*/
+/*--------- thin; Extra Bootstrap ---------*/
 @media (min-width: 1200px) {
     .container,
     .container-lg,
@@ -226,8 +214,6 @@ section.section-blue-gray {
     .sidebar {
         background-color: rgba(1, 16, 47, .15);
         backdrop-filter: blur(8px);
-    }.btn-social {
-        margin-inline: 0rem;
     }.w-img-80 {
         max-width: 80%;
     }
@@ -280,9 +266,7 @@ section.section-blue-gray {
 .fs-6 {
     font-size: 1.125rem !important;
 }
-/*----------------------------------
-            Custom SweetAlert
-------------------------------------*/
+/*--------- Custom SweetAlert ---------*/
 div:where(.swal2-container) div:where(.swal2-popup) {
     background: #33486C !important;
     color: #d9dbe0 !important;

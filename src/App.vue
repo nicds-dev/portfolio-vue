@@ -3,7 +3,7 @@
   <Home :userData="userData" />
   <About />
   <Projects />
-  <Contact />
+  <Contact :userData="userData" />
   <Footer :userData="userData" />
 </template>
 
@@ -30,6 +30,7 @@ export default {
       userData: {
         linkedin: "https://www.linkedin.com/in/nicds/",
         github: "https://github.com/nicds-dev/",
+        email: "nicdsdev@gmail.com",
         img: require("@/assets/img/profile.webp"),
       },
     }
