@@ -99,6 +99,13 @@ section.section-blue-gray {
 .icon-project:hover::before {
     color: white;
 }
+.icon-social {
+    font-size: 1.65rem;
+    color: white;
+}
+.icon-social:hover {
+    color: rgb(93, 190, 255);
+}
 .btn-cv {
     background-color: #01102f;
     outline: 3px rgb(93, 190, 255) solid !important;
@@ -270,12 +277,4 @@ section.section-blue-gray {
 div:where(.swal2-container) div:where(.swal2-popup) {
     background: #33486C !important;
     color: #d9dbe0 !important;
-}
-div:where(.swal2-container) h2:where(.swal2-title) {
-    padding: .8em 1em .8em !important;
-}
-div:where(.swal2-icon).swal2-success [class^="swal2-success-circular-line"][class$="left"],
-div:where(.swal2-icon).swal2-success .swal2-success-fix,
-div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {
-    background-color: #33486C !important;
 }

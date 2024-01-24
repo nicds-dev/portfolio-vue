@@ -8,14 +8,14 @@
           <i class="bi bi-arrow-down icon-bounce"></i>
         </p>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+          <a :href="userData.linkedin" class="icon-social" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a :href="userData.github" class="icon-social" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
           <a :href="`mailto:${userData.email}`" class="btn btn-blue fw-semibold" target="_blank">
-            <i class="bi bi-envelope"></i> Email
-          </a>
-          <a :href="userData.linkedin" class="btn btn-blue fw-semibold" target="_blank">
-            <i class="bi bi-linkedin"></i> LinkedIn
-          </a>
-          <a :href="userData.github" class="btn btn-blue fw-semibold" target="_blank">
-            <i class="bi bi-github"></i> GitHub
+            <i class="bi bi-envelope-paper icon-bold"></i> Email
           </a>
         </div>
       </div>

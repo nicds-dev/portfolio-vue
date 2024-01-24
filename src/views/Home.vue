@@ -86,10 +86,4 @@ export default {
       padding-bottom: 3rem;;
     }
   }
-  .icon-social {
-    font-size: 1.65rem;
-    color: white;
-  }.icon-social:hover {
-    color: rgb(93, 190, 255);
-  }
 </style>
