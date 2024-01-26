@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="section-blue-gray py-6 text-white">
-    <div class="container p-4 d-flex flex-lg-row flex-column gap-5">
+    <div class="container p-4 d-flex flex-lg-row flex-column row-gap-5">
       <div class="col-12 col-lg-6 d-flex flex-column align-self-center text-lg-start text-center mb-0 mb-lg-5 gap-3">
         <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
         <p class="fw-semibold p-text-color">
@@ -50,7 +50,9 @@ export default {
 </script>
 
 <style scoped>
-  p {
-    max-width: 30ch;
+  @media (min-width: 992px) {
+    p {
+      max-width: 30ch;
+    }
   }
 </style>

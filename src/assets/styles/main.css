@@ -76,14 +76,10 @@ section.section-blue-gray {
     box-shadow: 2px 2px 10px #24385B;
     background-color: #071d44;
     border: 2px rgb(93, 190, 255) solid;
-    transition-property: all;
     transition-duration: .15s;
 }
 .box-project:hover {
     background-color: #102146;
-}
-.icon-skill {
-    width: 2.6rem;
 }
 .icon-bold::before {
     font-weight: bold !important;
@@ -144,11 +140,9 @@ section.section-blue-gray {
     0% {
         transform: translate(0)
     }
-
     50% {
         transform: translateY(3px)
     }
-
     to {
         transform: translate(0)
     }
@@ -158,39 +152,8 @@ section.section-blue-gray {
     color: rgb(93, 190, 255);
     font-weight: bold !important;
 }
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-.logo:nth-child(2) {
-    transition-delay: 25ms;
-}
-.logo:nth-child(3) {
-    transition-delay: 50ms;
-}
-.logo:nth-child(4) {
-    transition-delay: 75ms;
-}
-.logo:nth-child(5) {
-    transition-delay: 100ms;
-}
-.logo:nth-child(6) {
-    transition-delay: 125ms;
-}
-.logo:nth-child(7) {
-    transition-delay: 150ms;
-}
-.logo:nth-child(8) {
-    transition-delay: 175ms;
-}
 /*--------- Styles Scrollbar ---------*/
-/* (Chrome, Safari, Opera) */
+    /* (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -201,12 +164,12 @@ section.section-blue-gray {
 ::-webkit-scrollbar-track {
     background-color: #ccd6e133;
 }
-/* WebKit (Firefox) */
+    /* WebKit (Firefox) */
 * {
     scrollbar-color: rgb(93, 190, 255) #ccd6e133;
     scrollbar-width: thin;
 }
-/*--------- thin; Extra Bootstrap ---------*/
+/*--------- Extra Bootstrap ---------*/
 @media (min-width: 1200px) {
     .container,
     .container-lg,
@@ -269,9 +232,6 @@ section.section-blue-gray {
 .py-6 {
     padding-top: 5.4rem !important;
     padding-bottom: 5.4rem;
-}
-.fs-6 {
-    font-size: 1.125rem !important;
 }
 /*--------- Custom SweetAlert ---------*/
 div:where(.swal2-container) div:where(.swal2-popup) {
