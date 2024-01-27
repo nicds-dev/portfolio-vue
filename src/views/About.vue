@@ -32,6 +32,6 @@
 
 <style scoped>
   ::marker {
-    color: rgb(93, 190, 255);
+    color: #42C189;
   }
 </style>

@@ -16,7 +16,7 @@
         </div>
       </article>
       <div class="col-lg-5 col-md-8 order-1 mx-auto mx-lg-0 text-center">
-        <img :src="userData.img" alt="nicds picture" class="img-fluid w-img-80 rounded-circle">
+        <img :src="userData.img" alt="nicds picture" class="img-fluid blob">
       </div>
       <div class="d-flex flex-column flex-lg-row align-items-center pt-lg-5 py-4 row-gap-5 order-3">
           <h2 class="col-lg-2 col text-lg-start text-center fw-bold fs-4 mb-0">Tech 
