@@ -53,12 +53,12 @@ export default {
   },
   data() {
     return {
-      headers: [
-        { name: "Home", id: "home" },
-        { name: "About", id: "about" },
-        { name: "Projects", id: "projects" },
-        { name: "Contact", id: "contact" },
-      ]
+      headers: {
+        home: 'home',
+        about: 'about',
+        projects: 'projects',
+        contact: 'contact'
+      }
     }
   }
 }

@@ -73,7 +73,6 @@ section.section-blue-gray {
     background-color: #24385B;
 }
 .box-project {
-    box-shadow: 2px 2px 10px #24385B;
     background-color: #071d44;
     border: 2px #42C189 solid;
     transition-duration: .15s;

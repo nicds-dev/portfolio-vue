@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid offcanvas-body d-flex align-items-center me-0">
     <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 fw-semibold fs-5">
-      <li v-for="header in headers" :key="header.id" class="nav-item mx-1">
+      <li v-for="header in headers" :key="header" class="nav-item mx-1">
         <a
-          :href="`#${header.id}`"
-          :class="{ 'nav-link': true, active: header.id === currentSection }"
-        >{{ header.name }}</a>
+          :href="`#${header}`"
+          :class="{ 'nav-link': true, active: header === currentSection }"
+        >{{ $t(`navbar.${header}`) }}</a>
       </li>
     </ul>
   </div>
@@ -16,7 +16,7 @@
 export default {
   name: "SubNav",
   props: {
-    headers: Array
+    headers: Object
   },
   data() {
     return {

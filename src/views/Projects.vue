@@ -6,7 +6,7 @@
         <div v-for="project in portfolio" :key="project.title" class="col-12 col-md-6 col-lg-4">
           <div class="h-100 d-flex flex-column gap-2 box-project rounded p-3">
             <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
-            <img :src="project.img" :alt="project.title" class="img-fluid rounded">
+            <img v-if="project.img" :src="require(`@/assets/img/${project.img}`)" :alt="project.title" class="img-fluid rounded">
             <div class="d-flex flex-wrap justify-content-center gap-2">
               <div v-for="tag in project.tags" class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
                 <span class="fw-semibold">{{ tag }}</span>
@@ -31,25 +31,20 @@
 <script>
 export default {
   name: 'Projects',
+  created() {
+    this.getProjects();
+  },
   data() {
     return {
-      portfolio: [
-        {
-          title: "Test Django REST Framework",
-          description: "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
-          source: "https://github.com/nicds-dev/django_test",
-          link: "",
-          youtube: "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
-          img: require("@/assets/img/drf_test.webp"),
-          tags: [
-            'Django', 'REST', 'Postman',
-          ],
-        },
-        {
-        },
-        {
-        },
-      ],
+      portfolio: []
+    }
+  },
+  methods: {
+    async getProjects() {
+      let res = await fetch("projects.json")
+      let data = await res.json()
+
+      this.portfolio = data;
     }
   },
 }

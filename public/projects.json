@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Test Django REST Framework",
+        "description": "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
+        "source": "https://github.com/nicds-dev/django_test",
+        "link": "",
+        "youtube": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
+        "img": "drf-test.webp",
+        "tags": ["Django", "REST", "Postman"]
+    },
+    {
+
+    },
+    {
+
+    }
+]

@@ -5,6 +5,17 @@
   <Projects />
   <Contact :userData="userData" />
   <Footer :userData="userData" />
+  <div v-if="$i18n" class="position-fixed bottom-0 end-0 p-md-4 p-3 dropup-center dropup">
+    <button type="button" class="btn btn-languages btn-lg" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-translate"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a @click="$i18n.locale = 'en'" class="dropdown-item">{{ $t('lang.en') }}</a>
+        <a @click="$i18n.locale = 'es'" class="dropdown-item">{{ $t('lang.es') }}</a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -28,12 +39,15 @@ export default {
   data() {
     return {
       userData: {
-        linkedin: "https://www.linkedin.com/in/nicds/",
-        github: "https://github.com/nicds-dev/",
-        email: "nicdsdev@gmail.com",
-        img: require("@/assets/img/profile.webp"),
+        linkedin: 'https://www.linkedin.com/in/nicds/',
+        github: 'https://github.com/nicds-dev/',
+        email: 'nicdsdev@gmail.com',
+        img: require('@/assets/img/profile.webp'),
       },
     }
   },
+  onMounted() {
+    document.cookie = "locale=es";
+  }
 }
 </script>
