@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="section-dark py-6 text-white">
     <div class="container d-flex flex-column p-4 gap-5">
-      <h2 class="title-second fw-bold text-center">Projects</h2>
+      <h2 class="title-second fw-bold text-center">{{ $t("projectSection.title") }}</h2>
       <div class="row g-5">
         <div v-for="project in portfolio" :key="project.title" class="col-12 col-md-6 col-lg-4">
           <div class="h-100 d-flex flex-column gap-2 box-project rounded p-3">
@@ -44,7 +44,10 @@ export default {
       let res = await fetch("projects.json")
       let data = await res.json()
 
-      this.portfolio = data;
+      const currentLanguage = this.$i18n.locale;
+
+      this.portfolio = data[currentLanguage].projects;
+      console.log(this.portfolio)
     }
   },
 }

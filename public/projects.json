@@ -1,17 +1,40 @@
-[
-    {
+{
+  "en": {
+    "projects": [
+      {
         "title": "Test Django REST Framework",
-        "description": "Technical test provided by a local company, basic concepts of DRF (orm framework, serializers, class-based views, etc.).",
+        "description": "Test of basic concepts of DRF (ORM framework, serializers, class-based views, etc.).",
         "source": "https://github.com/nicds-dev/django_test",
         "link": "",
         "youtube": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
         "img": "drf-test.webp",
         "tags": ["Django", "REST", "Postman"]
-    },
-    {
-
-    },
-    {
-
-    }
-]
+      },
+      {
+        
+      },
+      {
+        
+      }
+    ]
+  },
+  "es": {
+    "projects": [
+      {
+        "title": "Prueba Django REST Framework",
+        "description": "Prueba de conceptos básicos de DRF (framework ORM, serializadores, vistas basadas en clases, etc.).",
+        "source": "https://github.com/nicds-dev/django_test",
+        "link": "",
+        "youtube": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
+        "img": "drf-test.webp",
+        "tags": ["Django", "REST", "Postman"]
+      },
+      {
+        
+      },
+      {
+        
+      }
+    ]
+  }
+}

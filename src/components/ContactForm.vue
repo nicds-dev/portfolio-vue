@@ -1,6 +1,9 @@
 <template>
     <form ref="form" @submit.prevent="sendEmail">
-        <em class="fw-semibold p-text-color">Or you can leave me a <span class="text-blue">message</span>:</em>
+        <em class="fw-semibold p-text-color">
+            {{ $t("contactSection.text") }}
+            <span class="text-blue">{{ $t("contactSection.text2") }}</span>:
+        </em>
         <div v-for="field in formFields" :key="field.name" class="my-3">
             <input
                 v-if="field.type === 'text'"
@@ -32,8 +35,8 @@
         </div>
         <div class="mt-3 text-end">
             <button type="submit" class="btn btn-blue fw-semibold px-3" :disabled="loading">
-                <span v-if="!loading">Send Message</span>
-                <span v-if="loading">Sending Message...</span>
+                <span v-if="!loading">{{ $t("contactSection.btn") }}</span>
+                <span v-if="loading">{{ $t("contactSection.loading") }}</span>
             </button>
         </div>
     </form>
@@ -84,12 +87,12 @@ export default {
                         .sendForm(this.serviceId, this.templateId, this.$refs.form, this.publicKey)
                         .then(() => {
                             this.loading = false;
-                            this.showMessage('Great! Message sent', 'success');
+                            this.showMessage(this.$t("contactSection.success"), 'success');
                             this.formSent = false
                         })
                         .catch(() => {
                             this.loading = false;
-                            this.showMessage('Oops! Something went wrong', 'error');
+                            this.showMessage(this.$t("contactSection.error"), 'error');
                             this.formSent = false
                         })
                         .finally(() => {

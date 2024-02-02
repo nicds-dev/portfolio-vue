@@ -2,9 +2,11 @@
   <section id="contact" class="section-blue-gray py-6 text-white">
     <div class="container p-4 d-flex flex-lg-row flex-column row-gap-5">
       <div class="col-12 col-lg-6 d-flex flex-column align-self-center text-lg-start text-center mb-0 mb-lg-5 gap-3">
-        <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
+        <h2 class="title-second fw-bold">
+          {{ $t("contactSection.title") }}<span class="text-blue">{{ $t("contactSection.title2") }}</span>
+        </h2>
         <p class="fw-semibold p-text-color">
-          I'm just a few clicks away. You can contact me through my socials. 
+          {{ $t("contactSection.subtitle") }}
           <i class="bi bi-arrow-down icon-bounce"></i>
         </p>
         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
@@ -40,9 +42,9 @@ export default {
   data() {
     return {
       formFields: [
-        { name: "name", placeholder: "Enter your name", type: "text"},
-        { name: "email", placeholder: "Enter your email", type: "email"},
-        { name: "message", placeholder: "Enter your message", type: "text_area", rows: "5"},
+        { name: "name", placeholder: this.$t("contactSection.namePlaceholder"), type: "text"},
+        { name: "email", placeholder: this.$t("contactSection.emailPlaceholder"), type: "email"},
+        { name: "message", placeholder: this.$t("contactSection.messagePlaceholder"), type: "text_area", rows: "5"},
       ],
     }
   },

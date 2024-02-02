@@ -8,5 +8,42 @@
         "about": "Acerca de",
         "projects": "Proyectos",
         "contact": "Contacto"
+    },
+    "homeSection": {
+        "title": "Hola, soy ",
+        "title2": "Desarrollador",
+        "title3": "Backend",
+        "subtitle": "Experiencia en desarrollo web. \"Optimizando el rendimiento detrás de la pantalla.\"",
+        "cv": "cv-es.pdf",
+        "stack": "Tecnolgías",
+        "stack2": ":"
+    },
+    "aboutSection": {
+        "title": "Sobre ",
+        "title2": "Mí",
+        "description": "Ingeniero Informático colombiano, enfocado en el mundo del desarrollo web, especialmente en el backend. Mi formación ha sido un camino de constante exploración y aprendizaje, esto me ha llevado a profundizar en diversas tecnologías y metodologías. Dedicado a brindar soluciones eficientes y confiables en el mundo en constante evolución del desarrollo web.",
+        "studies": "Estudios",
+        "career": "Ingeniería Informática",
+        "dates": "Febrero 2018 - Junio 2022"
+    },
+    "projectSection": {
+        "title": "Proyectos"
+    },
+    "contactSection": {
+        "title": "Contáctame",
+        "title2": ".",
+        "subtitle": "Estoy a sólo unos clics de distancia. Puedes contactarme a través de mis redes sociales. ",
+        "text": "O puedes dejarme un ",
+        "text2": "mensaje",
+        "namePlaceholder": "Ingresa tu nombre",
+        "emailPlaceholder": "Ingresa tu email",
+        "messagePlaceholder": "Ingresa tu mensaje",
+        "btn": "Enviar mensaje",
+        "loading": "Enviando mensaje...",
+        "success": "¡Genial! Mensaje enviado",
+        "error": "Oops! Algo ha salido mal"
+    },
+    "footer": {
+        "text": "Creado con 🤍 por "
     }
 }

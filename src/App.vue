@@ -45,9 +45,6 @@ export default {
         img: require('@/assets/img/profile.webp'),
       },
     }
-  },
-  onMounted() {
-    document.cookie = "locale=es";
   }
 }
 </script>

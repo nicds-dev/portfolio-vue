@@ -8,5 +8,42 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "homeSection": {
+        "title": "Hi, I'm ",
+        "title2": "Backend",
+        "title3": "Developer",
+        "subtitle": "Experience in web development. \"Optimizing the performance behind the screen.\"",
+        "cv": "cv-en.pdf",
+        "stack": "Tech ",
+        "stack2": "Stack"
+    },
+    "aboutSection": {
+        "title": "About ",
+        "title2": "Me",
+        "description": "Colombian Computer Engineer, focused on the world of web development, especially in the backend. My training has been a path of constant exploration and learning, this has led me to delve into various technologies and methodologies. Dedicated to providing efficient and reliable solutions in the ever-evolving world of web development.",
+        "studies": "Studies",
+        "career": "Computer Engineering",
+        "dates": "February 2018 - June 2022"
+    },
+    "projectSection": {
+        "title": "Projects"
+    },
+    "contactSection": {
+        "title": "Contact ",
+        "title2": "Me",
+        "subtitle": "I'm just a few clicks away. You can contact me through my socials. ",
+        "text": "Or you can leave me a ",
+        "text2": "message",
+        "namePlaceholder": "Enter your name",
+        "emailPlaceholder": "Enter your email",
+        "messagePlaceholder": "Enter your message",
+        "btn": "Send Message",
+        "loading": "Sending Message...",
+        "success": "Great! Message sent",
+        "error": "Oops! Something went wrong"
+    },
+    "footer": {
+        "text": "Created with 🤍 by "
     }
 }
