@@ -39,6 +39,9 @@ export default {
       portfolio: []
     }
   },
+  watch: {
+    '$i18n.locale': 'getProjects'
+  },
   methods: {
     async getProjects() {
       let res = await fetch("projects.json")
@@ -47,7 +50,6 @@ export default {
       const currentLanguage = this.$i18n.locale;
 
       this.portfolio = data[currentLanguage].projects;
-      console.log(this.portfolio)
     }
   },
 }
