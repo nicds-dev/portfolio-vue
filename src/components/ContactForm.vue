@@ -10,7 +10,7 @@
                 :type="field.type"
                 :name="field.name"
                 v-model="form[field.name]"
-                :placeholder="field.placeholder"
+                :placeholder="$t(`contactSection.${field.name}Placeholder`)"
                 class="form-control no-box-shadow zorro"
                 :class="{ 'is-invalid': formSent && v$.form[field.name].$dirty && v$.form[field.name].$errors.length > 0 }"
             />
@@ -19,7 +19,7 @@
                 :type="field.type"
                 :name="field.name"
                 v-model="form[field.name]"
-                :placeholder="field.placeholder"
+                :placeholder="$t(`contactSection.${field.name}Placeholder`)"
                 class="form-control no-box-shadow"
                 :class="{ 'is-invalid': formSent && v$.form[field.name].$dirty && v$.form[field.name].$errors.length > 0 }"
             />
@@ -27,7 +27,7 @@
                 v-else
                 :name="field.name"
                 v-model="form[field.name]"
-                :placeholder="field.placeholder"
+                :placeholder="$t(`contactSection.${field.name}Placeholder`)"
                 class="form-control no-box-shadow"
                 :class="{ 'is-invalid': formSent && v$.form[field.name].$dirty && v$.form[field.name].$errors.length > 0 }"
                 :rows="field.rows"

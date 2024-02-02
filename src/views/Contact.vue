@@ -42,9 +42,9 @@ export default {
   data() {
     return {
       formFields: [
-        { name: "name", placeholder: this.$t("contactSection.namePlaceholder"), type: "text"},
-        { name: "email", placeholder: this.$t("contactSection.emailPlaceholder"), type: "email"},
-        { name: "message", placeholder: this.$t("contactSection.messagePlaceholder"), type: "text_area", rows: "5"},
+        { name: "name", type: "text"},
+        { name: "email", type: "email"},
+        { name: "message", type: "text_area", rows: "5"},
       ],
     }
   },
