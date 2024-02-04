@@ -41,11 +41,22 @@ export default {
   },
   data() {
     return {
-      formFields: [
-        { name: "name", placeholder: "namePlaceholder", type: "text"},
-        { name: "email", placeholder: "emailPlaceholder", type: "email"},
-        { name: "message", placeholder: "messagePlaceholder", type: "text_area", rows: "5"},
-      ],
+      formFields: [],
+    }
+  },
+  mounted() {
+    this.updateFormFields();
+  },
+  watch: {
+    '$i18n.locale': 'updateFormFields'
+  },
+  methods: {
+    updateFormFields() {
+      this.formFields = [
+        { name: "name", placeholder: this.$t("contactSection.namePlaceholder"), type: "text"},
+        { name: "email", placeholder: this.$t("contactSection.emailPlaceholder"), type: "email"},
+        { name: "message", placeholder: this.$t("contactSection.messagePlaceholder"), type: "text_area", rows: "5"},
+      ];
     }
   },
 }
