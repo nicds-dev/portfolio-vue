@@ -29,12 +29,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    NavBar,
-    Home,
-    About,
-    Projects,
-    Contact,
-    Footer
+    NavBar, Home, About, Projects, Contact, Footer
   },
   data() {
     return {
@@ -48,3 +43,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .dropdown-item {
+    cursor: pointer;
+  }
+</style>

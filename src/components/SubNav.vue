@@ -10,9 +10,8 @@
     </ul>
   </div>
 </template>
-  
-<script>
 
+<script>
 export default {
   name: "SubNav",
   props: {
@@ -33,7 +32,9 @@ export default {
         let id = sec.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
-          this.currentSection = id;
+          if (this.currentSection !== id) {
+            this.currentSection = id;
+          }
         }
       });
     },
@@ -49,4 +50,3 @@ export default {
   },
 }  
 </script>
-  

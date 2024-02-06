@@ -13,7 +13,8 @@ import 'sweetalert2/dist/sweetalert2.min.css'
 import './assets/styles/main.css'
 
 const i18n = createI18n({
-    locale: 'en',
+    locale: navigator.language.toLowerCase().split('-')[0],
+    fallbackLocale: 'en',
     messages: {
         en: require('./locale/en.json'),
         es: require('./locale/es.json'),
