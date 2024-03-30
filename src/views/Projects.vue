@@ -6,7 +6,9 @@
         <div v-for="project in portfolio" :key="project.title" class="col-12 col-md-6 col-lg-4">
           <div class="h-100 d-flex flex-column gap-2 box-project rounded p-3">
             <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
-            <img v-if="project.img" :src="require(`@/assets/img/${project.img}`)" :alt="project.title" class="img-fluid rounded">
+            <div class="ratio ratio-16x9">
+              <img v-if="project.img" :src="require(`@/assets/img/${project.img}`)" :alt="project.title" class="img-fluid rounded object-fit-cover">
+            </div>
             <div class="d-flex flex-wrap justify-content-center gap-2">
               <div v-for="tag in project.tags" class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
                 <span class="fw-semibold">{{ tag }}</span>

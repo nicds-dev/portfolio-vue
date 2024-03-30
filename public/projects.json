@@ -11,7 +11,13 @@
         "tags": ["Django", "REST", "Postman"]
       },
       {
-        
+        "title": "Simple blog Django REST Framework + Vue",
+        "description": "Simple blog made with DRF, basic Vue3 (Views, Store, Router, etc.) and Bootstrap.",
+        "source": "https://github.com/nicds-dev/blog-drf-vue",
+        "link": "",
+        "youtube": "https://www.youtube.com/watch?v=VJwhOxdH7N0",
+        "img": "blog-drf-vue.webp",
+        "tags": ["Django", "VueJS", "Bootstrap"]
       },
       {
         
@@ -30,7 +36,13 @@
         "tags": ["Django", "REST", "Postman"]
       },
       {
-        
+        "title": "Blog simple Django REST Framework + Vue",
+        "description": "Blog simple hecho con DRF, Vue3 básico (Views, Store, Router, etc.) y Bootstrap.",
+        "source": "https://github.com/nicds-dev/blog-drf-vue",
+        "link": "",
+        "youtube": "https://www.youtube.com/watch?v=VJwhOxdH7N0",
+        "img": "blog-drf-vue.webp",
+        "tags": ["Django", "VueJS", "Bootstrap"]
       },
       {
         
